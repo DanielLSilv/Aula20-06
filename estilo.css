@@ -1,0 +1,101 @@
+h1{
+    color: red;
+    font-size: 100px;
+}
+
+#img img {
+    width:50vw ;
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.column{
+    float: left;
+    width: 23%;
+}
+
+
+/*aplicar formatação resposiva através de Media Queries*/
+
+
+@media screen and (max-width:696px) {
+
+    h1{
+        color: green;
+        background-color: black;
+        font-size: 20px;
+    }
+    body{
+        background-color: aqua;
+    }
+    .row{
+        display: inline;
+        justify-content: center;
+
+
+    }
+    
+    .column{
+        float: left;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #img img {
+        display: none;
+    }
+
+}
+
+@media  screen and (min-width:670px) and (max-width:1024px) {
+    h1{
+        color: pink;
+        background-color: black;
+        font-size: 80px;
+    }
+    body{
+        background-color: blue;
+    }
+
+    .row{
+        display: inline;
+        justify-content: center;
+
+
+    }
+    
+    .column{
+        float: left;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media screen  and (min-width:1025px) and (max-width:7000px) {
+    
+    h1{
+        color: black;
+        background-color: red;
+        font-size: 100px;
+        text-decoration: line-through;
+    }
+    body{
+        background-color: rgb(113, 113, 214);
+    }
+}
+
+
+
+
+
+
